@@ -15,7 +15,16 @@ const postMensage2 = `O post "${postTitle}", do "${postAL}, tem ${postComments} 
 console.log(postMensage2)  
 
 // criando templates HTML 
+/*em um cenario onde você recebe um conteudo dinamico de um banco de dados e 
+queira criar um template HTML que contem os dados dinamicos e renderizar o 
+HTML na pagina*/
 
+const html = `
+ <h2>${postTitle}</h2>
+ <p>Autor: ${postAL}</p>
+ <span>Este post tem ${postComments} comentarios</span>
+`
+console.log(html)
 
 
 
