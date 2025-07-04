@@ -26,5 +26,8 @@ const html = `
 `
 console.log(html)
 
+/*Templates String é usado quando quando não é necessario usar aspas ou inserir variaveis, 
+ou simplesmente quebrar linhas como o template html, caso contrario não sera 
+necessario usar o template stings */
 
 
