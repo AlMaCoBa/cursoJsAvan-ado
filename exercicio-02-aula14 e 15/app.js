@@ -29,15 +29,17 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Declare uma constante "myFavoriteTom" que recebe nome, espaço, e sobrenome do Tom que você mais gosta;
 - Exiba a "myFavoriteTom" no console do browser.
 */
-const tom = 'Tom'
+/*const tom = 'Tom'
 const firstTom = 'Hanks'
 const secondTom = 'Cruise'
-const myFavoriteTom = `${tom} ' ' ${secondTom}`
+const myFavoriteTom = `${tom} ${secondTom}`
 
-console.log(myFavoriteTom)
+console.log(myFavoriteTom)*/
 
-const arrombado = 'Vai se fuder'
+/*Zoando o jv du cdb -
+*const arrombado = 'Vai se fuder'
 console.log(arrombado)
+*/
 
 /*
 05 - Comente o console.log acima, e:
@@ -49,6 +51,10 @@ console.log(arrombado)
 */
 
 
+//Legenda: pL = programmingLanguage JS = JavaScript -AL-
+const pL = 'JavaScript'
+const js = pL[0] + pL[4]
+//console.log(js)
 
 /*
 06 - Comente o console.log acima, e,
@@ -59,6 +65,10 @@ console.log(arrombado)
 */
 
 const mozilla = 'Mozilla Developer Network'
+const mdn = mozilla[0] + mozilla[8] + mozilla[18]
+
+//console.log(mdn)
+
 
 /*
 07 - Comente o console.log acima, e,
@@ -66,17 +76,40 @@ const mozilla = 'Mozilla Developer Network'
 - Exiba no console do browser a quantidade de caracteres que a constante "programmingLanguage" possui;
 */
 
-
+//console.log(pL.length)
 
 /*
 08 - Comente o console.log acima, e,
 
 - Exiba no console a última letra da string que a "randomWord" (abaixo) armazena, mas com a condição a seguir;
 - Ao invés de inserir manualmente a posição do último caractere, faça com que a obtenção da última letra funcione para qualquer palavra que a "randomWord" receber;
-- Dica: utilize a propriedade ".length".
+- Dica: utilize a propriedade ".length". -AL: 'esqueci de ler esta parte'------
 */
 
-let randomWord = 'Araponga'
+
+//existem dois modos de resolver este exercicio, encontrei por meio de pesquisas:
+/*Usando length e notação de índice:
+1- A maneira mais direta é acessar o caractere no índice string.length - 1. Por exemplo:
+javascript
+let minhaString = "Olá Mundo";
+let ultimaLetra = minhaString[minhaString.length - 1]; // ultimaLetra será "o"
+
+2- O método charAt() retorna o caractere na posição especificada. Você pode usá-lo com string.length - 1 para obter o último caractere.
+javascript
+let minhaString = "JavaScript";
+let ultimaLetra = minhaString.charAt(minhaString.length - 1); // ultimaLetra será "t"
+ 
+Considerações:
+Se a string estiver vazia, string.length - 1 resultará em -1, e tentar acessar string[-1] retornará undefined, enquanto string.charAt(-1) retornará uma string vazia.
+Para verificar se uma string termina com um determinado caractere, use o método endsWith(). 
+
+-----------AL-------------
+*/
+let randomWord = 'xerecudão'
+//let ultimaLetra = randomWord[randomWord.length -1] -AL-
+let ultimaLetra = randomWord.charAt(randomWord.length -1)
+//console.log(ultimaLetra)
+
 
 /*
 09 - Comente o console.log acima, e,
@@ -87,7 +120,7 @@ let randomWord = 'Araponga'
 */
 
 const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
-
+//console.log(summerMessage.toLowerCase())
 /*
 10 - Comente o console.log acima, e,
 
@@ -97,13 +130,14 @@ const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
 */
 
 const winterMessage = 'o inverno está chegando'
+//console.log(winterMessage.toUpperCase())
 
 /*
 11 - Comente o console.log acima, e,
 
 - Exiba, no console, o index do caractere "v" da "winterMessage";
 */
-
+//console.log(winterMessage.indexOf('v'))
 
 
 /*
@@ -112,8 +146,7 @@ const winterMessage = 'o inverno está chegando'
 - Exiba, no console, o index da última ocorrência do caractere "n" da "winterMessage".
 */
 
-
-
+//console.log(winterMessage.lastIndexOf('n'))
 /*
 13 - Comente o console.log acima, e,
 
@@ -122,6 +155,8 @@ const winterMessage = 'o inverno está chegando'
 */
 
 const harryPotterAuthor = 'J.K. Rowling'
+//console.log(harryPotterAuthor.slice(0, 4))
+
 
 /*
 14 - Comente o console.log acima, e,
@@ -132,6 +167,9 @@ const harryPotterAuthor = 'J.K. Rowling'
 */
 
 const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
+const realBestMovie = bestMovie.replace('La la land', 'Moonlight')
+//console.log(realBestMovie)
+
 
 /*
 15 - Comente o console.log acima, e,
@@ -140,7 +178,8 @@ const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
 - Exiba a reminder no console. O resultado deve ser 1;
 */
 
-
+const reminder = 3 % 1
+//console.log(reminder)
 
 /*
 16 - Comente o console.log acima, e,
@@ -151,6 +190,8 @@ const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
 */
 
 let episodes = 6
+episodes ++
+//console.log(episodes)
 
 /*
 17 - Comente o console.log acima, e,
@@ -160,7 +201,8 @@ let episodes = 6
 - O valor exibido no console deve ser 6.
 */
 
-
+episodes--
+//console.log(episodes)
 
 /*
 18 - Comente o console.log acima, e,
@@ -169,7 +211,8 @@ let episodes = 6
 - Após a atribuição, exiba a let "episodes" no console.
 */
 
-
+episodes += 4
+//console.log(episodes)
 
 /*
 19 - Comente o console.log acima, e,
@@ -179,7 +222,10 @@ let episodes = 6
 - Exiba a "allEpisodes" no console.
 */
 
+const allEpisodes = 'O nº de episódios é: ' + episodes
 
+
+//console.log(allEpisodes)
 
 /*
 20 - Comente o console.log acima, e,
@@ -190,8 +236,10 @@ let episodes = 6
 - Não use template strings.
 */
 
-// const bookMessage = ''O Conto da Aia' é um dos livros mais vendidos da década.'
-// console.log(bookMessage)
+ const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.'
+ //console.log(bookMessage)
+
+/*--AL -- Basta "ecapar um carater", para fazer isso, basta inserir barras invertidas entre a string desejada */
 
 /*
 21 - Comente o console.log acima (e a const bookMessage caso não tenha descoberto a resolução), e,
@@ -205,7 +253,10 @@ let episodes = 6
 */
 
 const name = 'walter white'
+let newName = name[0].toUpperCase() + name.slice(1, 6) + ' ' +  name[7].toUpperCase() + name.slice(8, 12)
 
+//console.log(newName)
+/*--AL-- No '.slice', não é necessario colocar o segundo argumento*/
 /*
 22 - Comente o console.log acima, e,
 
@@ -215,3 +266,10 @@ const name = 'walter white'
 - Não modifique a string da const "name";
 - Exiba a "newName" no console;
 */
+
+/* --AL-- Template String = ${} */
+// O exercicio pede para fazer o mesmo do exercicio 21, porem, com template string "${}"
+
+newName = `${name[0].toUpperCase()}${name.slice(1, 6)} ${name[7].toUpperCase()}${name.slice(8)}`
+console.log(newName)
+
